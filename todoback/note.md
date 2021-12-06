@@ -168,7 +168,7 @@ index.js
 app.use(express.json()); 
 ```
 
-## Error 15:
+## Error 3:
 ```
 DB_URL=mongodb+srv://Suha:1111@cluster0.almml.mongodb.net/DB_TODO_TEST?retryWrites=true&w=majority
 ```
@@ -177,7 +177,7 @@ DB_URL=mongodb+srv://Suha:1111@cluster0.almml.mongodb.net/DB_TODO_TEST?retryWrit
 DB_URI=mongodb+srv://Suha:1111@cluster0.almml.mongodb.net/DB_TODO_TEST?retryWrites=true&w=majority
 ```
 
-## Error 16:
+## Error 3:
 ```
 
 const createTodo = (req, res) => {
@@ -221,7 +221,7 @@ todo
 };
 ```
 
-## Error 17:
+## Error 3:
 ```
 todoRouter.put("/todo", updateTodo);
 ```
@@ -231,7 +231,7 @@ todoRouter.put("/todo", updateTodo);
 todoRouter.put("/todo/:id", updateTodo);
 ```
 
-### Error 18:
+### error :
 ```
 const updateTodo = (req, res) => {
   const { id } = req.params;
@@ -266,7 +266,7 @@ const updateTodo = (req, res) => {
 
 ```
 
-### Error 19:
+### Error  :
 ```
 const deleteTodo = (req, res) => {
   const { id } = req.params;
@@ -297,3 +297,15 @@ const deleteTodo = (req, res) => {
     });
 };
 ````
+
+### Error 20:
+index.js
+```
+app.use(cors);
+```
+### solution 
+index.js
+```
+app.use(cors());
+```
+
