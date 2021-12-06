@@ -179,12 +179,11 @@ DB_URI=mongodb+srv://Suha:1111@cluster0.almml.mongodb.net/DB_TODO_TEST?retryWrit
 
 ## Error 16:
 ```
-
 const createTodo = (req, res) => {
   const todo = req.body.todo;
 
   const newTodo = new todoModel({
-   task: todo
+todo
   });
 
   newTodo
@@ -201,12 +200,11 @@ const createTodo = (req, res) => {
 
 ### Solution:
 ```
-
 const createTodo = (req, res) => {
   const todo = req.body.todo;
 
   const newTodo = new todoModel({
-todo
+   task: todo
   });
 
   newTodo
